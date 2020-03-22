@@ -1,0 +1,67 @@
+1. What is the output?
+def f(a, b=a):
+	print(a,b)
+a = 5
+f(20)
+
+2. What is the output?
+y = (lambda x: x = 10)
+x = 20
+y(x)
+print(x)
+
+3. What is the output?
+a = []
+for i in range(5):
+	a.append(lambda : i*i)
+print(a[2]())
+Is there a way to fix the above?
+
+4. What is the output?
+a = [10, 20, 30, 40]
+b = [100, 200, 300, 400]
+x, y = zip(*zip(a, b))
+print(x, y)
+
+5. Can you write a lambda function that takes a parameter n, and computes the factorial of n?
+
+6. What is the output?
+def f(x, a=[lambda y=print("Hello"):y]): 
+	a.append(x) 
+	print(len(a)) 
+f(10, [20])  
+f(100)
+f(3, [4])
+f(200)
+
+7. What is the output?
+def f(a, b, *c, d, *e):
+	print(a,b,c,d,e)
+f(10,20,30,40,50,d=60)
+
+8. Deduce the possible header of the definition of function f from the following information about its calls.  ​
+- f(1,2) gives error 
+- f(a=1, b=2, d=3, e=4) is valid 
+- f(1,2,d=3,e=4) is valid 
+- f(1,2,3,4,e=5,g=10,d=2) is valid 
+- f(1,2,3,4,e=5,g=10) gives error 
+- f(1,2,3,4) gives error 
+- f(1,2,3,4,5,6) gives error
+
+9. Assume you are given a file where each line of the file contains an integer. Call this file, "file.txt". What should the following line in Python do?:
+print(*sorted(open("file.txt"), key=int), file=open("file2.txt", "w"), sep="")
+- What happens if we remove 'key=int' from the above line?
+- What happens if we remove * before sorted in the above line?
+- What happens if we remove sep="" in the above line?
+- What happens if we replace key=int with the following: key=lambda x:int(x[-1])
+
+10. Write a lambda function that takes a parameter x (which is a list), and mutates the list by modifying its zeroth element to become 200.
+
+11. Write a function that takes any number of parameters, and returns the sum of all the parameters. Can you write this function as a lambda? Do not use inbuilt sum function for this.
+
+12. What is the output of the following?
+>>> (lambda x: lambda y: x(y)[2:])(bin)(10)
+
+13. Given the output of ls -l command, which lists out various fields for each file, print out that file which has the biggest size. A challenge would be to programmatically get the output of ls -l as well!
+
+14. Display the output of ls -l command, sorted according to file size.

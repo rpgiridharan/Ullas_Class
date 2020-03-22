@@ -1,0 +1,17 @@
+1. We saw that 3/2 evaluates to 1.5. Suppose you are a die-hard C programmer, who would love to see the result of division rounded down towards zero. How can you achieve this in Python?
+2. How do you use multi-line comments in Python?
+3. In class we said that every statement in Python should start from column 1. What happens if we start from some other column?
+4. Can name of Python files be anything, or are there restrictions?
+5. We saw that Python uses a hybrid of Compiler and Interpreter. But then, if it is using a Compiler, why don't we see any .o or a.out/a.exe files anywhere? Is there a way to see it?
+6. Can you have multiple statements on a single line?
+7. Can you think of a case where Reference count algorithm fails to work correctly?
+8. Can you come up with some other algorithm to do automatic garbage collection?
+9. Can you show a case where id(a) is different from id(b) where both a and b are separately assigned to the same value? Is this possible?
+10. Is it possible to decrement the reference count of an object without doing assignment?
+11. We said that the type descriptor is associated with the value object, and not the variable. Why is this stored at all? What would happen if this type descriptor was not stored anywhere, neither at the value object nor at the variable?
+12. Why is Python named so?
+13. What would happen if we had a Python file whose contents was just the following: print
+What happens if we try to run this file? What can you deduce?
+14. In the interactive mode, try something like: a = 10; When you hit the Enter key, why does it not print anything? Isn't the interactive mode supposed to "echo" the result?
+15. 
+

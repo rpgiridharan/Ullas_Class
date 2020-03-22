@@ -1,0 +1,1 @@
+# Given a dictionary D and a value v, write code that prints out a list of all keys that have v as its value (remember, in a dictionary, values can repeat). For example, if D = {'a':1, 'b':2, 'c':1, 'd':3}; v = 1, then it should print ['a', 'c']. If v=4 for the same D, it should print [].

@@ -1,0 +1,36 @@
+1. When we type in the interpreter the following:
+>>> 10(b)
+We get a NameError that b is not defined. However, try:
+>>> 10(4)
+Now, we get the error message that int is not callable. Why didn't it give the same error in the first case above?
+
+2. How does 3 + 4 + 5 reduce to function call?
+
+3. How does 3 + 4 * 5 reduce to function call?
+
+4. What is the output of the following:
+>>> a = [10,20] 
+>>> b = [a,a] 
+>>> b[1][1] = b 
+>>> print(b[0][1][0][0])
+>>> print(b)
+
+5. What is the output of the following?
+>>> sep = "Python"
+>>> print("Hello", "World", "Programming")
+
+6. What is the output of the following?
+>>> print("Hello", "World", "Programming", sep="Python")
+>>> print(sep)
+
+7. What is the output of the following?
+>>> sep = "Python"
+>>> print("Hello", "World", "Programming")
+>>> print(sep)
+What can you infer from all the above (questions 5-7)?
+
+8. What is the output of the following (assume it is written in a file, and not interpreter)
+exec(print("a=10"))
+print(a)
+
+

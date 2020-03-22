@@ -1,0 +1,47 @@
+1. Can you use the seek function to seek with a negative offset from the beginning of a file? If so, what happens when you then try to write at that position?
+
+2. Can you use the seek function to seek beyond the end of a file? If so, what happens when you then try to write there? If it works, what happens to the "holes" between the earlier end of file and the newly written stuff?
+
+3. Try the following:
+>>> f = open("foo.txt", "w")
+>>> print("Hello", file=f)
+Now go to your GUI file window and double click on the file "foo.txt" that has been created. Do you notice that the file is empty? Why is this so? We have written into the file using the print but still the file is empty. How is this happening? Also, is there a way to see the file contents immediately?
+
+4. Create a file named foo.py, and within that, write the following two lines. What will be the output of running this foo.py?
+f = open("foo.py")
+exec(f.read())
+
+5. Create a file named foo.py and write the following two lines in it. When you run the program, will "Hello" be printed? If so, how? If not, why not?
+f = open("foo.py", "w")
+print("Hello")
+
+6. Write a Python program that converts a Linux-format file to a Windows-format file. The only difference is this: In Linux, whenever you have a newline, it is represented as "\n" character. In Windows, this is represented as "\r\n" (this is the reason why when you open in Windows my programs which I typed in Linux, it will appear as if the whole thing is on a single line, because Windows will only go to newline when it encounters the "\r\n" characters, which it never gets in a Linux file...).
+
+7. Open a file in read mode. Observe the dir() function of this file object. You will see there is a method called "write". Why is this there when this file has been opened in read mode? What happens if we call the write method? Also observe there is another attribute called "mode". Print it and see what you get. What happens if you change this mode variable, and then try calling the write method? What do you infer?
+
+8. Can you rewrite print function call in terms of sys.stdout?
+
+9. I have attached a file named "access-log". This is a real log file taken from a server. Each line of the log file contains various fields. The last field in each line is the important field I want you to focus on. This last field is either a number indicating the no. of bytes transmitted; or it can be the character '-' which indicates missing value. The problem is this: Find the total no. of bytes transmitted overall. (Try doing it in only ONE line of code).
+
+10. I have attached two files "PS.txt" and "PoA.txt", which are full-length novels (Harry Potter ^_^). Write Python programs to do the following:
+(i) Count the number of words in PS.txt
+(ii) Count the number of distinct words in PS.txt
+(iii) Find all common words in both PS.txt and PoA.txt
+(iv) Find all unique words in PS.txt which don't occur in PoA.txt
+
+11. Try the following:
+>>> f = open("foo.txt", "w")
+>>> print("Hello", file=f)
+Now go to your GUI file window and you will observe foo.txt there. Delete this file. Now go back to the interactive console and type:
+>>> print("Python", file=f)
+Does this statement give an error? If not, what is happening?
+
+12. Assume a file called foo.txt already exists and has some lines in it. Try:
+>>> f = open("foo.txt")
+Now go to your GUI file window and you will observe foo.txt there. Delete this file. Now go back to the interactive console and type:
+>>> f.readline()
+Does this statement give an error? If not, what is happening? What do you infer?
+
+13. We know that we can use any data structure, such as list, set, tuple, str, ... in an if statement's condition, or a while statement's condition (basically, in any boolean context). Can we use a file object as well? If so, how does it work?
+
+14. 

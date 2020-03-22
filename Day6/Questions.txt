@@ -1,0 +1,36 @@
+1. We have seen that there are at least three different ways to copy a list a = [1,2,3]
+(i) list(a)
+(ii) a[:]
+(iii) [x for x in a]
+Which of the above three is the fastest? Use timeit function to find out. Try to justify the reason why the fastest of the above three is the fastest.
+
+2. Assume we have a file opened in write mode as follows: f = open("foo.txt", "w"). Now, which of the following two statements will be faster, i.e., take less time over multiple operations? Why? What does the flush parameter do?
+(a) print("Hello", file=f, flush=True)
+(b) print("Hello", file=f, flush=False)
+
+3. Find the size of the output buffer on your system.
+
+4. Assume you have a file foo.txt, whose contents consist of two lines, the first being "One" and the second being "Two". What is the output of the following:
+>>> f = open("foo.txt")
+>>> a, b = f
+>>> print(len(f.readlines()))
+
+5. Assume you have a file foo.txt, whose contents consist of three lines, "One", "Two", and "Three" respectively. What is the output of the following when run in the interactive mode:
+>>> f = open("foo.txt")
+>>> a, b = f
+>>> print(len(f.readlines()))
+
+6. What is the output?
+>>> a = [1,2,3,4,5]
+>>> _, *y, _ = a
+>>> print(_)
+
+7. In class, we created a data structure to represent the authors of particular books. Modify the file so that each line also contains not just author name and book title, but also language in which the book was written. How would you now modify the data structure?
+
+8. We discussed about DFAs in class. Write a Python program to represent a given DFA. For this purpose, there is a folder attached here called "DFA Tests". It consists of test cases to test your programs against. Each such file represents one DFA. The format of the file is as follows:
+The first line indicates the "alphabet". This means the set of allowable characters that the DFA can get in input. In class, we saw that this was binary alphabet, but in general it need not be. So this first line in the file indicates what are all the characters the DFA can get (the characters are tab-separated). 
+The second line onwards indicates the "transition function". The second line talks about state 0. The third line talks about state 1, the fourth line is about state 2, and so on. The state 0 is considered to be the start state. The way you read the transition function is as follows: say state 2 (which means the fourth line in the file) is: 1\t2 (look at input1.txt to follow along this example). This means that state 2 on getting alphabet 'a' makes a transition to state 1. State 2 on getting alphabet 'b' makes a transition to state 2.
+After all the states' transitions have been indicated, there is one blank line followed by a line which indicates all the state numbers which are "final states", i.e., those states which indicate that if the machine halts here, it accepts the input. These are again tab-separated.
+Your job is the following: Your Python program must prompt the user to enter the file name. Then when the user enters the file name (say input1.txt), the program reads in this file and constructs a DFA using a suitable Data structure. Then it prompts the user to enter an input string. Given that string, your program must output whether the constructed DFA accepts this input string or not.
+
+

@@ -1,0 +1,55 @@
+1. What will be the output of each of the following? You are very strongly encouraged to try working out the answer on your own rather than typing it into the interpreter and seeing what output you get (do this only after you have made a sincere attempt at working it out on your own, else the whole point of the exercise is lost!):
+(i) print(set([]))
+(ii) print(set("IISc"))
+(iii) print(set([1,2,3]))
+(iv) print(set(list(set(tuple([1,2,3])))))
+(v) print(set(["IISc"]))
+(vi) print(set([[10,20],[30,40]]))
+(vii) print(set([{1,2,3}]))
+(viii) print({[10,20,30]})
+
+2. What is the output of this:
+a = [1,2]
+print(tuple(a))
+print(set(tuple(a)))
+
+3. Find the number of digits in 2**100.
+
+4. How many times is "Foo" printed in the following?
+for i in range(len(range(5))):
+	print("Foo")
+
+5. How many times is "Foo" printed in the following?
+for i in range(0):
+	print("Foo")
+
+6. Assume that a = [1,2,3] and b = [4,5,6]. What is the difference between the statement a = a + b; and a += b; Are they isomorphic?
+
+7. What is the output of the following?
+for i in range(5):
+    a = []
+print(i)
+
+8. Write a Python program to play a game of Hangman.
+
+9. Write a Python program to play "Guess the number". In case you don't know what this game is, one player has a number in mind which the other has to guess. At each guess made, the player who knows the number will either say "Too High" or "Too low", or if he has made the correct guess, then "Correct".
+
+10. What is the output?
+for word in "Python rules the world":
+	print(word)
+
+11. How many times is "Foo" printed in the following:
+for i in [range(5)]:
+	print("Foo")
+
+12. What is the output?
+print(2**(2+True))
+
+13. Assume we are given a and b as two integers. Write ONLY one line of code 
+that prints out a hollow rectangle (made of #) of sides a and b. For 
+example: if a = 5, b = 3, then it should print: 
+##### 
+#   # 
+##### 
+
+14. 

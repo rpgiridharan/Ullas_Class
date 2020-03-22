@@ -1,0 +1,37 @@
+1. What is the output of the following? Explain why.
+>>> print = 10
+>>> del print
+>>> print("Hello")
+
+2. What is the output of the following, given input as 1? Why?
+n = int(input())
+def foo():
+	print("Hello")
+	if n > 10:
+		def bar():
+			print("Greater than 10")
+	else:
+		def foo():
+			print("Less than 10")
+	foo()
+	del foo
+	foo()
+foo()
+
+3. What is the output?
+>>> i = 10
+>>> for i in range(5):
+>>>	pass
+>>> print(i)
+
+4. What is the output?
+>>> i = 10
+>>> x = [i*i for i in range(5)]
+>>> print(i)
+
+5. What is the output?
+>>> def f(x,y):
+>>>	print(x,y)
+>>> f(print("Hello"), f(print("I get printed first"), print("I am last")))
+
+6. This is a challenging exercise. Write a function that takes another function as argument, and checks if this function when run will give an UnboundLocalError (obviously, without running it).

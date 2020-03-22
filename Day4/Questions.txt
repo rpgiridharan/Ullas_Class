@@ -1,0 +1,25 @@
+1. Why is it that the endpoint of both range and slice is one past the end?
+
+In all of the following, you are expected to write a Python program to achieve the stated objective, and wherever possible, try to achieve it in one line (the one line excludes getting input from the user).
+
+2. Get current time, and depending on it, print, "Good morning", "Good afternoon", or "Good evening".
+
+3. Given IP address in dotted-decimal notation, convert to 32-bit number.
+
+4. Imagine scenes from old novels where the hero gets an anonymous letter. The anonymous letter is written out of characters obtained from some magazine (the writer actually cuts out each character and pastes it!). Consider a string L which represents the anonymous letter. Consider another string M which represents some magazine. Write code to print out True if it is possible to construct L out of the characters in M, and False otherwise. Ex: If L = "aabbcc" and M = "aabbcdddddeeee", it should print False because M has only one occurence of 'c' whereas L has two.
+
+5. Given a square matrix M, expressed as a list of lists, write code to obtain the diagonal elements. Also write code to obtain the secondary diagonal elements. Ex: M = [[1,2,3],[4,5,6],[7,8,9]]; Output = (a) [1,5,9] (b) [3,5,7] 
+
+6. Generate an identity matrix of dimension n.
+
+7. Let k and t be strings of some arbitrary length. Let s be a string that contains more than one occurrence of k. Write code so that only the first occurrence of k in s is replaced by t.
+
+8. You are given two strings s1 and s2. Write code that prints out all the characters in the first string that appear in the second string.
+
+9. Given two strings s1 and s2, write code that prints True if s1 doesn't use any of the characters in s2, and False otherwise.
+
+10. Write a program that takes a list of numbers and prints the cumulative sum; that is, a new list where the ith element is the sum of the first i elements from the original list. For example, the cumulative sum of [1, 2, 3] is [1, 3, 6].
+
+11. There are 500 closed doors along a corridor. A person walks through and opens each door. Then a second person comes and closes every alternate door. Continuing in this manner, the i-th person comes and toggles the position of every i-th door. Which are the doors left open after the 500-th person has finished? You can solve this problem with mathematical reasoning alone. However, you can even write a Python program that solves this! :)
+
+12. Encrypt a given string using ROT3. That is, rotate each char by 3 positions. Example, if given string is s = "Hello", output should be: "Khoor". Also write a program to decrypt a ROT3-encrypted string.

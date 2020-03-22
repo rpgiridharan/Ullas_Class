@@ -1,0 +1,4 @@
+One line to express all,
+One line to solve the problem
+One line to code them all,
+And in the interpreter run them!

@@ -1,0 +1,77 @@
+1. What is the output of the following:?
+def foo(msg):
+	def printer():
+		print(msg)
+	return printer
+x = foo("Hello")
+del foo
+x()
+
+2. Is the following a closure?
+def f(x):
+	def g():
+		print("Hello")
+	return g
+
+3. Is the following a closure?
+data = 10
+def f():
+	print(data)
+
+4. Decorate factorial function so that it outputs "Error" on getting a negative input.
+
+5. When we use the len function, it returns the length of the iterable. Modify this so that it should print out also: "The type of the iterable is: <whatever type>" and then followed by: "Its length is: ", and then its length. For example, when we say: len("abc"), it should print out: "The type of the iterable is: <class 'str'>. Its length is: 3", and then it should return back the value 3.
+
+6. Decorate the len function so that it works on file object/zip object too. Basically, len should work on any iterable object. 
+
+7. Decorate the range fn so that it always returns back a list (just like in Python 2)
+
+8. In class, we decorated the dir function to give all names that don't begin with "__". This problem is about multiple decorators. Decorate that decorated dir function, so that it now gives the list of only those names that are more than 5 characters long.
+
+9. When we use the type function, it gives an ugly message. For example, when we say: type(10), it says: <class 'int'>. Modify its behaviour, so that whenever we call type function, it should just return whatever was earlier part of its single-quotes. That is, in the example above, type(10) should return: 'int'. And type("abc") should return: 'str'.
+
+10. The ord function takes a character as parameter and returns the ascii value of it. Decorate it so that it can take any string as parameter. It should return back a tuple of ascii values of each of the characters of the string.
+
+11. Write a function checkPassword, that takes a string as parameter and compares it to another string (which is the actual password), and this function returns True or False depending on whether the input string matches with the actual password. Now, without altering this function, ensure that this checkPassword function can be called a maximum of 3 times.
+
+12. Decorate the bin function so that it does not print out the '0b' prefix in its output. Further, decorate this decorated bin so that it now takes two parameters, the number and a width, and it pads the output with zeroes, upto width digits.
+
+13. Decorate the exit function so that it prompts the user "Are you sure you wish to quit?(Y/N). If the user types 'Y', then it should exit, else it should not.
+
+14. Decorate the globals function so that it should only print out those globals which don't begin with double underscore.
+
+15. What is the output of the following? And is it a closure?
+def foo(x):
+	def bar1():
+		print(x)
+	def bar2():
+		print(x+10)
+	def bar3():
+		print(x*10)
+	def bar4():
+		print(x**2)
+	return [bar1, bar2, bar3, bar4]
+a = foo(20)
+for f in a:
+	f()
+
+16. Write a decorator that times a function. (You can import time module, and use time.time())
+
+17. What is the output of the following?
+def star(f):
+	def inner(x):
+		print("*" * 10)
+		f(x)
+		print("*" * 10)
+	return inner
+def hash(f):
+	def inner(x):
+		print("#" * 10)
+		f(x)
+		print("#" * 10)
+	return inner
+@hash
+@star
+def foo(s):
+	print(s)
+

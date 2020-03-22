@@ -1,0 +1,15 @@
+1. Write your own diff tool in Python. 
+
+2. What is the output of the following:
+>>> a = [10,20,30]
+>>> b = [100,200,300]
+>>> for i,j in zip(a,b):
+...     print(i,j)
+Explain how the above for loop works.
+
+3. What is the output of the following:
+>>> a = [10,20,30]
+>>> b = [100,200,300]
+>>> x = zip(a,b)
+>>> print((10,100) in x)
+>>> print(list(x))

@@ -1,0 +1,33 @@
+1. What is the output?
+m1 = map(lambda x:x**2, range(10))  
+m2 = map(lambda x:x+1, m1)  
+print(list(zip(m2,m1)))
+How would you correct it minimally to give the expected output?
+
+2. What is the output?
+print(list(map(len, "Hello")))
+
+3. Given a string s consisting of all lowercase characters, we wish to find the summation of weight of each character in s. What is wrong with the following code? How would you correct it?:
+>>> import functools
+>>> functools.reduce(lambda x, y:(ord(x)-96) + (ord(y)-96), s)
+
+4. Given a string s, and an int n, generate n-grams of the given string s. For example, given s = "Good morning", and n = 3, the n-grams are: ['Goo', 'ood', 'od ', 'd m', ' mo', 'mor', 'orn', 'rni', 'nin', 'ing']
+
+5. In Day4, look at the "Questions.txt" file. You solved many problems using list comprehension. Solve all of them now using map/filter (without using list comprehension).
+
+6. Consider the following code. What will be the output? Also state precisely what the 
+last line does.  ​
+def foo(x,y): 
+    return ((x[0]­y[0])**2 + (x[1]­y[1])**2)**0.5 
+a = [(0,0),(5,0),(5,3),(0,3)] 
+import functools 
+print(functools.reduce(lambda m,n:m+n, map(lambda y:foo(*y), zip(a,a[1:]+a[:1]))))
+
+7. Define a function mymax that works like the max function (DON'T use the inbuilt max function for this). It should take any number of arguments and find out which is the largest of them. Also, optionally it should take a keyword parameter called key. This parameter will indicate the function that is used to transform each element of the iterable based on which the max has to be found.
+Example: mymax(1,2,3) returns 3. mymax("10", "200", key=len) returns "200" (i.e, it applies len function to each of the parameters and then finally returns that parameter for which this len function gave the maximum value).
+
+8. Define a function that computes the Euclidean distance between any two points (assume 2-dimensional plane).
+
+9. Define a function that takes an arbitrary number of 2-d points as parameters and returns back a list of these points sorted according to their distance from origin (You may want to make use of the function you defined in the previous exercise for this!)
+
+10. Assume you are given a list of points that describe the vertices of any polygon. Write ONLY ONE LINE of code (making use of the distance function you had written earlier) that finds out the perimeter of this polygon. Example: assume you are given a = [(0,0), (0,3), (4,0)]. Then your code must print out the perimeter of this polygon (which is a right-angled triangle) -> which is 12.
